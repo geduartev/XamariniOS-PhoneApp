@@ -46,12 +46,30 @@ namespace Lab04
                     PresentViewController(Alert, true, null);
                 }
             };
+
+            Button0.TouchUpInside += (object sender, EventArgs e) => { ShowDisplay("0"); };
+            Button1.TouchUpInside += (object sender, EventArgs e) => { ShowDisplay("1"); };
+            Button2.TouchUpInside += (object sender, EventArgs e) => { ShowDisplay("2"); };
+            Button3.TouchUpInside += (object sender, EventArgs e) => { ShowDisplay("3"); };
+            Button4.TouchUpInside += (object sender, EventArgs e) => { ShowDisplay("4"); };
+            Button5.TouchUpInside += (object sender, EventArgs e) => { ShowDisplay("5"); };
+            Button6.TouchUpInside += (object sender, EventArgs e) => { ShowDisplay("6"); };
+            Button7.TouchUpInside += (object sender, EventArgs e) => { ShowDisplay("7"); };
+            Button8.TouchUpInside += (object sender, EventArgs e) => { ShowDisplay("8"); };
+            Button9.TouchUpInside += (object sender, EventArgs e) => { ShowDisplay("9"); };
+            ButtonAsterisc.TouchUpInside += (object sender, EventArgs e) => { ShowDisplay("*"); };
+            ButtonSharp.TouchUpInside += (object sender, EventArgs e) => { ShowDisplay("#"); };
         }
 
         public override void DidReceiveMemoryWarning()
         {
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
+        }
+
+        private void ShowDisplay(string number)
+        {
+            Display.Text = $"{Display.Text}{number}";
         }
     }
 }

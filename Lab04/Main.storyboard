@@ -18,28 +18,162 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proporcionar un número de teléfono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="222" translatesAutoresizingMaskIntoConstraints="NO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proporcionar un número de teléfono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="222" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="16" y="92" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1-855-XAMARIN" borderStyle="roundedRect" minimumFontSize="17" id="438" translatesAutoresizingMaskIntoConstraints="NO">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1-855-XAMARIN" borderStyle="roundedRect" minimumFontSize="17" id="438" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="16" y="121" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="439" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="439" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="16" y="159" width="343" height="30"/>
                                 <state key="normal" title="Convertir">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="440" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="440" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="16" y="197" width="343" height="30"/>
                                 <state key="normal" title="Llamar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                            </button>
+                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="characterWrap" adjustsFontSizeToFit="NO" id="669" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Label" highlighted="YES" adjustsLetterSpacingToFitWidth="NO" opaque="NO">
+                                <rect key="frame" x="16" y="235" width="337" height="97"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <color key="highlightedColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                </variation>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="670" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" showsTouchWhenHighlighted="YES" fixedFrame="YES">
+                                <rect key="frame" x="103" y="340" width="40" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="1"/>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="671" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" showsTouchWhenHighlighted="YES" fixedFrame="YES">
+                                <rect key="frame" x="151" y="340" width="40" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="2"/>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="672" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" showsTouchWhenHighlighted="YES" fixedFrame="YES">
+                                <rect key="frame" x="199" y="340" width="40" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="3"/>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="673" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" showsTouchWhenHighlighted="YES" fixedFrame="YES">
+                                <rect key="frame" x="151" y="388" width="40" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="5"/>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="674" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" showsTouchWhenHighlighted="YES" fixedFrame="YES">
+                                <rect key="frame" x="199" y="388" width="40" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="6"/>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="675" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" showsTouchWhenHighlighted="YES" fixedFrame="YES">
+                                <rect key="frame" x="103" y="388" width="40" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="4"/>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="676" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" showsTouchWhenHighlighted="YES" fixedFrame="YES">
+                                <rect key="frame" x="151" y="436" width="40" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="8"/>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="677" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" showsTouchWhenHighlighted="YES" fixedFrame="YES">
+                                <rect key="frame" x="199" y="436" width="40" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="9"/>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="678" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" showsTouchWhenHighlighted="YES" fixedFrame="YES">
+                                <rect key="frame" x="103" y="436" width="40" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="7"/>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="679" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" showsTouchWhenHighlighted="YES" fixedFrame="YES">
+                                <rect key="frame" x="151" y="484" width="40" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="0"/>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="680" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" showsTouchWhenHighlighted="YES" fixedFrame="YES">
+                                <rect key="frame" x="199" y="484" width="40" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="#"/>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="681" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" showsTouchWhenHighlighted="YES" fixedFrame="YES">
+                                <rect key="frame" x="103" y="484" width="40" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="*"/>
+                                <connections/>
                             </button>
                         </subviews>
                         <variation key="default">
@@ -48,6 +182,19 @@
                                 <exclude reference="438"/>
                                 <exclude reference="439"/>
                                 <exclude reference="440"/>
+                                <exclude reference="669"/>
+                                <exclude reference="670"/>
+                                <exclude reference="671"/>
+                                <exclude reference="672"/>
+                                <exclude reference="673"/>
+                                <exclude reference="674"/>
+                                <exclude reference="675"/>
+                                <exclude reference="676"/>
+                                <exclude reference="677"/>
+                                <exclude reference="678"/>
+                                <exclude reference="679"/>
+                                <exclude reference="680"/>
+                                <exclude reference="681"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -56,6 +203,19 @@
                                 <include reference="438"/>
                                 <include reference="439"/>
                                 <include reference="440"/>
+                                <include reference="669"/>
+                                <include reference="670"/>
+                                <include reference="671"/>
+                                <include reference="672"/>
+                                <include reference="673"/>
+                                <include reference="674"/>
+                                <include reference="675"/>
+                                <include reference="676"/>
+                                <include reference="677"/>
+                                <include reference="678"/>
+                                <include reference="679"/>
+                                <include reference="680"/>
+                                <include reference="681"/>
                             </mask>
                         </variation>
                     </view>
@@ -63,6 +223,19 @@
                         <outlet property="PhoneNumberText" destination="438" id="name-outlet-438"/>
                         <outlet property="TranslateButton" destination="439" id="name-outlet-439"/>
                         <outlet property="CallButton" destination="440" id="name-outlet-440"/>
+                        <outlet property="Button2" destination="671" id="name-outlet-671"/>
+                        <outlet property="Button3" destination="672" id="name-outlet-672"/>
+                        <outlet property="Button4" destination="675" id="name-outlet-675"/>
+                        <outlet property="Button5" destination="673" id="name-outlet-673"/>
+                        <outlet property="Button6" destination="674" id="name-outlet-674"/>
+                        <outlet property="Button7" destination="678" id="name-outlet-678"/>
+                        <outlet property="Button8" destination="676" id="name-outlet-676"/>
+                        <outlet property="Button9" destination="677" id="name-outlet-677"/>
+                        <outlet property="ButtonAsterisc" destination="681" id="name-outlet-681"/>
+                        <outlet property="Button0" destination="679" id="name-outlet-679"/>
+                        <outlet property="ButtonSharp" destination="680" id="name-outlet-680"/>
+                        <outlet property="Display" destination="669" id="name-outlet-669"/>
+                        <outlet property="Button1" destination="670" id="name-outlet-670"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

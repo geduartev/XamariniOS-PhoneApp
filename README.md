@@ -3,3 +3,4 @@
 ### Phone App iPhone
 > Descripción: App iOS para traducir letras a números telefónicos y realizar llamadas.
 + Proyecto Single App View iPhone
++ Se agrega label que muestra los números digitados con los botones agregados.
